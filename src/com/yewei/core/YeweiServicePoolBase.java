@@ -29,6 +29,7 @@ public abstract class YeweiServicePoolBase<Tp> implements BeanPostProcessor {
 	
     protected final Map<String, Tp> servicePool = new ConcurrentHashMap<>();
 
+	@SuppressWarnings("unchecked")
 	private final Class<Tp> serviceClass = 
 			(Class<Tp>) ((ParameterizedType) YeweiReflectionUtils.
 					getOriginalClassWithoutProxy(this).
