@@ -5,7 +5,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.yewei.adapter.DepositVendorAdapter;
-import com.yewei.model.ServiceEnum;
+import com.yewei.model.deposit.ServiceEnum;
 
 @Service("wechatPayService")
 public class WechatPayServiceImpl implements  DepositVendorAdapter {

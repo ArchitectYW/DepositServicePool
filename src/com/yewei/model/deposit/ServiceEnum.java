@@ -1,4 +1,4 @@
-package com.yewei.model;
+package com.yewei.model.deposit;
 
 public enum ServiceEnum {
 	wechat,

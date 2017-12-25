@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:tsk="http://www.springframework.org/schema/task"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			   http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			   http://www.springframework.org/schema/context
+			   http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			   http://www.springframework.org/schema/tx 
+			   http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+			   http://www.springframework.org/schema/task
+			   http://www.springframework.org/schema/task/spring-task-3.0.xsd
+                           http://www.springframework.org/schema/rabbit
+                           http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd
+                           http://www.springframework.org/schema/cache
+                           http://www.springframework.org/schema/cache/spring-cache.xsd
+			   http://www.springframework.org/schema/aop 
+			   http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+			   
+			
+	<context:annotation-config/>
+	
+    <aop:aspectj-autoproxy/>  
+	<!-- 通过component-scan让spring扫描package下的所有类,让spring的注解生效-->  
+    <context:component-scan base-package="com.yewei.service"></context:component-scan>  
+    <context:component-scan base-package="com.yewei.controller"></context:component-scan>  
+    <context:component-scan base-package="com.yewei.model"></context:component-scan>  
+   	
+	
+			   
+</beans>

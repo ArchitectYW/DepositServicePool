@@ -1,6 +1,6 @@
 package com.yewei.adapter;
 
-import com.yewei.model.ServiceEnum;
+import com.yewei.model.deposit.ServiceEnum;
 
 public interface DepositVendorAdapter {
  	public ServiceEnum getDepositVendorType();

@@ -29,7 +29,7 @@ public class Test extends AbstractTransactionalJUnit4SpringContextTests {
 //        	System.out.println(s);    // ´òÓ¡beanµÄname
 //        }
     	
-    	ApplicationContext ctx=new FileSystemXmlApplicationContext("D:/eclipWorkspace/DepositServicePool/WebContent/WEB-INF/springmvc.xml");  
+    	ApplicationContext ctx=new FileSystemXmlApplicationContext("D:/eclipWorkspace/DepositServicePool/WebContent/WEB-INF/applicationContext-springmvc.xml");  
     	DepositVendorService depositVendorService=(DepositVendorService) ctx.getBean("depositVendorService");  
     	
     	depositVendorService.deposit("wechat");

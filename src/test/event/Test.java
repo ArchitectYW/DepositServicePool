@@ -13,7 +13,7 @@ public class Test extends AbstractTransactionalJUnit4SpringContextTests {
     public static void main(String[] args) throws Exception {
         // 我这里使用的是绝对路径，请根据你项目的路径来配置（相对路径挖不出来-OUT了）
     	
-    	ApplicationContext ctx=new FileSystemXmlApplicationContext("D:/eclipWorkspace/DepositServicePool/WebContent/WEB-INF/springmvc.xml");  
+    	ApplicationContext ctx=new FileSystemXmlApplicationContext("D:/eclipWorkspace/DepositServicePool/WebContent/WEB-INF/applicationContext-springmvc.xml");  
     	EventService eventService=(EventService) ctx.getBean("eventService");  
     	
     	eventService.userRegister("叶炜");

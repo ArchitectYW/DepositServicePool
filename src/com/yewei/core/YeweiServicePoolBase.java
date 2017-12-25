@@ -62,8 +62,8 @@ public abstract class YeweiServicePoolBase<Tp> implements BeanPostProcessor {
     public abstract String getServiceBeanName(Tp theServiceBean);
     
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-    	System.out.println("bean处理器：bean创建之后.."+beanName); 
-    	System.out.println("pool"+servicePool.toString()); 
+//    	System.out.println("bean处理器：bean创建之后.."+beanName); 
+//    	System.out.println("pool"+servicePool.toString()); 
     	return bean;
     }
     
