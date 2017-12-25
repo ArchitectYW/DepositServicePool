@@ -81,16 +81,12 @@ public class LogInterceptor {
             
             
 
-            RequestAttributes ra = RequestContextHolder.getRequestAttributes();
-            ServletRequestAttributes sra = (ServletRequestAttributes) ra;
-            HttpServletRequest request = sra.getRequest();
-
             bean.setMethod(signature.getName());
-            bean.setHost(request.getRemoteAddr());
 
             //²Ù×÷Ê±¼ä
             bean.setOperationTime(System.currentTimeMillis() - time);
-
+            
+            System.out.println(bean.toString());
 
             asyncTaskExecutor.submit(new Callable<String>() {
 
